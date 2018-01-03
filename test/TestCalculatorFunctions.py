@@ -9,17 +9,12 @@ class KnownValues(unittest.TestCase):
   # test_functionName_testDescription
 
   def test_calculateBMI_forLowerBoundary(self):
+    print("Starting test_calculateBMI_forLowerBoundary...")
     result = CalculatorFunctions.calculateBMI(58, 91)
     
     expected = 19
     
     self.assertEqual(expected, result)
-    
-    
-# Run the test
-
-if __name__ == '__main__':
-  print("Starting Tests...")
-  unittest.main()
+    print("...Ending test_calculateBMI_forLowerBoundary.")    
 
     
