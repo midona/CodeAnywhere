@@ -1,5 +1,6 @@
 #CalculatorFunctions.py
 
-def calculateBMI(inches, pounds):
+class CalculatorFunctions(object):
   
-  return 0
+  def calculateBMI(self, inches, pounds):
+    return 0

@@ -2,15 +2,18 @@
 
 # import statements
 import unittest
-import CalculatorFunctions
+from app.CalculatorFunctions import CalculatorFunctions
 
 class KnownValues(unittest.TestCase):
   # Formula for untitest method names is...
   # test_functionName_testDescription
 
+  def setUp(self):
+    self.calc = CalculatorFunctions()
+    
   def test_calculateBMI_forLowerBoundary(self):
     print("Starting test_calculateBMI_forLowerBoundary...")
-    result = CalculatorFunctions.calculateBMI(58, 91)
+    result = self.calc.calculateBMI(58, 91)
     
     expected = 19
     
